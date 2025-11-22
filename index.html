@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSCompiler</title>
+    <!-- CodeMirror CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.2/codemirror.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.2/theme/dracula.min.css">
+
+    <!-- JS Beautify -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/js-beautify/1.14.7/beautify.min.js"></script>
+
+    <!-- CodeMirror JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.2/codemirror.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.2/mode/javascript/javascript.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.2/mode/htmlmixed/htmlmixed.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.2/mode/css/css.min.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+   <h3>📝 JavaScript Compiler</h3>
+    
+    <div class="box">
+        <div class="editor-output">
+            <div class="editor-section">
+                <div class="section-label">💻 Code Editor</div>
+                <textarea id="code"></textarea>
+            </div>
+            
+            <div class="output-section">
+                <div class="section-label">📤 Output Console</div>
+                <pre id="output">Output will appear here...</pre>
+            </div>
+        </div>
+
+        <div class="button-group">
+            <button onclick="runCode()">▶️ Run Code</button>
+            <button onclick="clearAll()">🗑️ Clear</button>
+            <button onclick="formatCode()">✨ Format</button>
+        </div>
+
+        <div class="keyboard-hint">
+            💡 Shortcuts: <kbd>Ctrl</kbd>+<kbd>Enter</kbd> to run | <kbd>Shift</kbd>+<kbd>Alt</kbd>+<kbd>F</kbd> to format
+        </div>
+    </div>
+    
+    <!-- CodeMirror JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.15/codemirror.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.15/mode/javascript/javascript.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.15/addon/edit/closebrackets.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.15/addon/edit/matchbrackets.min.js"></script>
+    
+    <!-- JS Beautifier -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/js-beautify/1.14.7/beautify.min.js"></script>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
